@@ -40,11 +40,19 @@ group :development,:test do
 gem 'pry-rails'
 gem 'shoulda'
 gem 'capybara'
-gem 'factory_girl'
-gem 'cucumber'
+gem 'factory_girl_rails'
+# gem 'cucumber'
 gem 'rspec-rails'
 gem 'cucumber-rails', :require => false
 gem 'database_cleaner'
+gem 'guard-rspec', require: false
+# gem 'selenium-webdriver' # This need firefox to be installed on the machine 
+gem 'poltergeist' # head less browser for the testing requires to work with pa
+#Note this runs in the background. do the debug using console.log...
+gem 'launchy' # this will launch page for  when saved with capybara
+# gem 'capybara-webkit' 
+# poltergist was not working for me # i  need to change --- I WAS WRONG
+# Capybara.javascript_driver = :webkit
 
 end
 
