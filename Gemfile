@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -44,13 +44,13 @@ gem 'factory_girl_rails'
 # gem 'cucumber'
 gem 'rspec-rails'
 gem 'cucumber-rails', :require => false
-gem 'database_cleaner'
+# gem 'database_cleaner'
 gem 'guard-rspec', require: false
 # gem 'selenium-webdriver' # This need firefox to be installed on the machine 
-gem 'poltergeist' # head less browser for the testing requires to work with pa
+# gem 'poltergeist' # head less browser for the testing requires to work with pa
 #Note this runs in the background. do the debug using console.log...
 gem 'launchy' # this will launch page for  when saved with capybara
-# gem 'capybara-webkit' 
+gem 'capybara-webkit' 
 # poltergist was not working for me # i  need to change --- I WAS WRONG
 # Capybara.javascript_driver = :webkit
 
